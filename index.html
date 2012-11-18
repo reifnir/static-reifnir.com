@@ -1,11 +1,32 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title>Jim Andreasen : C# Sr. Software Developer</title>
-    <script src="scripts/knockout-2.1.0.debug.js" type="text/javascript"></script>
-    <script src="models/resumeData.js" type="text/javascript"></script>
-</head>
-<body>
-    <span data-bind="value: Test()">FirstName</span>
-</body>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Jim Andreasen : C# Sr. Software Developer</title>
+		<link rel="stylesheet" href="stylesheets/base.css" type="text/css" />
+        <script src="scripts/mustache.js" type="text/javascript"></script>
+        <script src="scripts/jquery-1.8.2.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            var template = "{{#depts}}<h1>{{name}}</h1>" +
+                            "<ul>{{#employees}}" +
+                                "{{>employee}}{{/employees}}" +
+                            "</ul>{{/depts}}";
+            var partials = { employee: "<li>{{firstName}} {{lastName}}</li>" };
+
+            $(function () {
+                $.getJSON('fixture/jim-andreasen.js', null, function (data, textStatus, jqXHR) {
+                    var modelData = data;
+                
+
+                });
+
+            });
+
+        </script>
+
+
+    </head>
+    <body>
+    
+    </body>
 </html>

@@ -1,0 +1,110 @@
+@import url("reset.css");
+@import url("grid.css");
+
+body {
+	color: #333;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 100%;
+	line-height: 24px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: inherit;
+	font-weight: bold;
+	color: #555;
+	text-rendering: optimizelegibility;
+}
+
+h1 { 
+	border-bottom: 0.107em solid #aaa;
+	font-size: 1.750em; /* 28px */
+	line-height: 1.643em; /* 46px to include border */
+	margin-bottom: 0.857em;
+}
+
+h2 { 
+	font-size: 1.625em; /* 24px */
+	line-height: 1.846em;
+	margin-bottom: 0.923em;
+}
+
+h3 { 
+	font-size: 1.250em; /* 20px */
+	line-height: 1.200em;
+	margin-bottom: 1.200em;
+}
+
+h4 { 
+	color: #333;
+	font-size: 1em; /* 16px */
+	line-height: 1.500em;
+	margin-bottom: 1.500em;
+}
+
+
+h5 { 
+	color: #888;
+	font-size: 1em; /* 16px */
+	line-height: 1.500em;
+	margin-bottom: 1.500em;
+}
+
+
+a {
+	color: #33b;
+	border-bottom: 0.063em dashed #aaf;
+	line-height: 1.438em; /* Smaller (23px) to take border into account */
+	text-decoration: none;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+h4+ul, h4+p, h5+ul {
+	margin-top: -1.5em;
+}
+
+ul {
+	margin-bottom: 1.500em;
+}
+
+
+#content {
+	background-color: #fff;
+}
+.section {
+	clear: both;
+	margin-bottom: 1.500em;
+}
+
+.separated li {
+	display: inline-block;
+}
+
+.separated li:after{
+	content: '•';
+	margin-right: .25em;
+	margin-left: .5em;
+}
+
+.separated li:last-child:after{
+	content: '';
+	margin-right: 0;
+}
+
+.location {
+	display: block;
+	color: #999;
+	font-size: 0.800em; /* 16px */
+	line-height: 1.500em;
+	margin-bottom: 1.500em;
+}
+
+.description {
+	margin-top: 1.5em;
+}
+
+.quiet {
+	color: #666;
+}
