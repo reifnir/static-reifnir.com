@@ -10,7 +10,7 @@
             "ZipCode": "19301"
         },
         "Phone": "484-324-8829",
-        "Web": "reifnir.com"
+        "Web": "http://reifnir.com"
     },
     "Skills": {
         "Professional": [
@@ -249,7 +249,7 @@
                 ]
             }
         ],
-        "Software Development": [
+        "SoftwareDevelopment": [
             {
                 "Name": "Software Architecture Design",
                 "Children": [
