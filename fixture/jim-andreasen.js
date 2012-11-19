@@ -10,7 +10,7 @@
             "ZipCode": "19301"
         },
         "Phone": "484-324-8829",
-        "Web": "http://reifnir.com"
+        "Web": "reifnir.com"
     },
     "Skills": {
         "Professional": [
