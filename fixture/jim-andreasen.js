@@ -57,9 +57,6 @@
                 ]
             },
             {
-                "Name": "Continuous Integration and Deployment"
-            },
-            {
                 "Name": "Design Patterns Leveraged",
                 "Children": [
                     {
