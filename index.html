@@ -86,11 +86,11 @@
 				<p>{{dateFormat StartDate format="MMMM YYYY"}} <span class="quiet">to</span> {{dateFormat EndDate format="MMMM YYYY"}}</p>
 				<p class="description">{{Description}}</p>
 
-				<ul class="separated">
-					<li>C# <span class="quiet">(70%)</span></li>
-					<li>SQL <span class="quiet">(25%)</span></li>
-					<li>JavaScript <span class="quiet">(5%)</span></li>
-				</ul>
+                {{#if LanguageConcentration}}<ul class="separated">{{/if}}
+                    {{#LanguageConcentration}}
+                        <li>{{Name}} <span class="quiet">({{percentFormat Weight}})</li>
+                    {{/LanguageConcentration}}
+                {{#if LanguageConcentration}}</ul>{{/if}}
 			</div>
         </script>
 
@@ -112,6 +112,11 @@
                     } else {
                         return context; // moment plugin not available. return data as is.
                     };
+                });
+
+                Handlebars.registerHelper('percentFormat', function (context, block) {
+                    var decimals = block.hash.decimals || 0;
+                    return (context * 100).toFixed(decimals) + '%';
                 });
 
                 var source = $("#resume-template").html();
