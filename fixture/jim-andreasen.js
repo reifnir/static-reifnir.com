@@ -181,7 +181,7 @@
                 ]
             },
             {
-                "Name": "Contonuous Integration and Unit Testing",
+                "Name": "Continuous Integration and Unit Testing",
                 "Children": [
                     {
                         "Name": "TeamCity 6.0",
