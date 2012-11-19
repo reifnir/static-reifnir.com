@@ -5,126 +5,134 @@
         <title>Jim Andreasen : C# Sr. Software Developer</title>
 		<link rel="stylesheet" href="stylesheets/base.css" type="text/css" />
 
-        <script src="scripts/jquery-1.8.2.js" type="text/javascript"></script>
-        <script src="scripts/mustache.js" type="text/javascript"></script>
+        <script src="scripts/jquery-1.8.3.min.js" type="text/javascript"></script>
+        <script src="scripts/handlebars-1.0.rc.1.min.js" type="text/javascript"></script>
+        <script src="scripts/moment.min.js" type="text/javascript"></script>
+
+        <script id="resume-template" type="text/x-handlebars-template">
+            <div id="content" class="container_12">
+                {{#ContactInfo}}
+                    {{> contactInfo}}
+                {{/ContactInfo}}
+                {{#Skills}}
+                    <h1 class="grid_12">Skills</h1>
+			        <div class="section clearfix">
+				        <h3 class="grid_3">Professional</h3>
+				        <div class="grid_9">
+                            {{#Professional}}
+                                {{> skillInfo}}
+			                {{/Professional}}
+				        </div>
+
+				        <h3 class="grid_3">Technologies</h3>
+				        <div class="grid_9">
+                            {{#Technologies}}
+                                {{> skillInfo}}
+			                {{/Technologies}}
+				        </div>
+
+				        <h3 class="grid_3">Software Development</h3>
+				        <div class="grid_9">
+                            {{#SoftwareDevelopment}}
+                                {{> skillInfo}}
+			                {{/SoftwareDevelopment}}
+				        </div>
+                    </div>
+                {{/Skills}}
+
+        		<h1 class="grid_12">Work Experience</h1>
+		        <div class="section clearfix">
+                    {{#WorkExperience}}
+                        {{> jobInfo}}
+                    {{/WorkExperience}}
+		        </div>
+            </div>
+        </script>
+        <script id="contactInfo-partial" type="text/x-handlebars-template">
+            <h1 class="grid_12">Contact</h1>
+            <div class="section clearfix">
+                <h3 class="grid_3">{{FirstName}} {{LastName}}</h3>
+                <div class="grid_9">
+                    <p>
+                        <a href="mailto: {{Email}}">{{Email}}</a><br/>
+                        {{Phone}}<br/>
+                        <a href="{{Web}}">{{Web}}</a>
+				</p>
+				{{#Address}}<p>
+					{{Address}}<br/>
+					{{City}}, {{State}} {{ZipCode}}
+				</p>{{/Address}}
+			</div>
+        </script>
+        <script id="skillInfo-partial" type="text/x-handlebars-template">
+			<h4>{{Name}}</h4>
+			<ul class="separated">
+                {{#Children}}
+                    <li>
+                        {{#if Url}}<a href="{{Url}}">{{/if}}
+                        {{Name}}
+                        {{#if Url}}</a>{{/if}}
+                    </li>
+                {{/Children}}
+			</ul>
+        </script>
+        <script id="jobInfo-partial" type="text/x-handlebars-template">
+			<h3 class="grid_3">{{CompanyName}} <span class="location">{{Address}}</span></h3>
+			<div class="grid_9">
+				<h4>{{Title}}</h4>
+				<p>{{dateFormat StartDate format="MMMM YYYY"}} <span class="quiet">to</span> {{dateFormat EndDate format="MMMM YYYY"}}</p>
+				<p class="description">{{Description}}</p>
+
+				<ul class="separated">
+					<li>C# <span class="quiet">(70%)</span></li>
+					<li>SQL <span class="quiet">(25%)</span></li>
+					<li>JavaScript <span class="quiet">(5%)</span></li>
+				</ul>
+			</div>
+        </script>
+
         <script type="text/javascript">
-            function GetDate(Date) {
-                return "poop";
+            function handlebarsRegistrations() {
+                Handlebars.registerPartial("contactInfo", $("#contactInfo-partial").html());
+                Handlebars.registerPartial("skillInfo", $("#skillInfo-partial").html());
+                Handlebars.registerPartial("jobInfo", $("#jobInfo-partial").html());
+
+                // format an ISO date using Moment.js
+                // http://momentjs.com/
+                // moment syntax example: moment(Date("2011-07-18T15:50:52")).format("MMMM YYYY")
+                // usage: {{dateFormat creation_date format="MMMM YYYY"}}
+                Handlebars.registerHelper('dateFormat', function (context, block) {
+                    if (window.moment) {
+                        var f = block.hash.format || "MMM Do, YYYY";
+                        var date = typeof context === "string" ? Date.parse(context) : Date(context);
+                        return moment(date).format(f);
+                    } else {
+                        return context; // moment plugin not available. return data as is.
+                    };
+                });
+
+                var source = $("#resume-template").html();
+                var template = Handlebars.compile(source);
+                return template;
             }
 
-            var template =
-                "<div id=\"content\" class=\"container_12\">" +
-                    "{{#ContactInfo}}" +
-                        "{{> contactInfo}}" +
-                    "{{/ContactInfo}}" +
-                    "{{#Skills}}" +
-                        "<h1 class=\"grid_12\">Skills</h1>" +
-			            "<div class=\"section clearfix\">" +
-				            "<h3 class=\"grid_3\">Professional</h3>" +
-				            "<div class=\"grid_9\">" +
-                                "{{#Professional}}" +
-                                    "{{> skillInfo}}" +
-			                    "{{/Professional}}" +
-				            "</div>" +
-
-				            "<h3 class=\"grid_3\">Technologies</h3>" +
-				            "<div class=\"grid_9\">" +
-                                "{{#Technologies}}" +
-                                    "{{> skillInfo}}" +
-			                    "{{/Technologies}}" +
-				            "</div>" +
-
-				            "<h3 class=\"grid_3\">Software Development</h3>" +
-				            "<div class=\"grid_9\">" +
-                                "{{#SoftwareDevelopment}}" +
-                                    "{{> skillInfo}}" +
-			                    "{{/SoftwareDevelopment}}" +
-				            "</div>" +
-                        "</div>" +
-                    "{{/Skills}}" +
-
-        			"<h1 class=\"grid_12\">Work Experience</h1>" +
-		        	"<div class=\"section clearfix\">" +
-                        "{{#WorkExperience}}" +
-                            "{{> jobInfo}}" +
-                        "{{/WorkExperience}}" +
-		        	"</div>" +
-
-
-
-                "</div>";
-            /*
-            
-            "{{#depts}}<h1>{{name}}</h1>" +
-                            "<ul>{{#employees}}" +
-                                "{{>employee}}{{/employees}}" +
-                            "</ul>{{/depts}}";*/
-            var partials = {
-                contactInfo:
-                    "<h1 class=\"grid_12\">Contact</h1>" +
-                    "<div class=\"section clearfix\">" +
-                        "<h3 class=\"grid_3\">{{FirstName}} {{LastName}}</h3>" +
-                        "<div class=\"grid_9\">" +
-                            "<p>" +
-                                "<a href=\"mailto: {{Email}}\">{{Email}}</a><br/>" +
-                                "{{Phone}}<br/>" +
-                                "<a href=\"{{Web}}\">{{Web}}</a>" +
-					    "</p>" +
-					    "{{#Address}}<p>" +
-						    "{{Address}}<br/>" +
-						    "{{City}}, {{State}} {{ZipCode}}" +
-					    "</p>{{/Address}}" +
-				    "</div>",
-                skillInfo:
-					"<h4>{{Name}}</h4>" +
-					"<ul class=\"separated\">" +
-                        "{{#Children}}" +
-	    					"<li><a href=\"{{Url}}\">{{Name}}</a></li>" +
-                        "{{/Children}}" +
-					"</ul>",
-                jobInfo:
-				    "<h3 class=\"grid_3\">{{CompanyName}} <span class=\"location\">{{Address}}</span></h3>" +
-				    "<div class=\"grid_9\">" +
-					    "<h4>{{Title}}</h4>" +
-					    "<p>{{#StartDate}}  ${GetDate(StartDate)}   {{/StartDate}}{{^StartDate}}Present{{/StartDate}} <span class=\"quiet\">to</span> {{#EndDate}}{{.}}{{/EndDate}}{{^EndDate}}Present{{/EndDate}}</p>" +
-					    /*<p class="description">Individually completed a partially implemented and abandoned-as-impossible attempt at rearchitecting their core application leveraging Dependency Injection and Repository patterns. Was a principle leader in shaping and implementing the API/backend design of the core application's more-UX focused reboot as a RESTful, more unit-testable API. Provided mentoring and assistance for other developers in algorithms, troubleshooting and design. Was a main contributer to the new rule-based dynamic content service's early development project. Received the peer nominated, management approved Roller of the year award in 2011. The majority of development was done in C# 4.0 in ASP.NET (TDD, Repo pattern, IoC => DI, MVC3 as a JSON REST API), WCF (service per-request, custom handlers and behavior, SOAP, WebApi and CodePlex WCF Web API), and JavaScript (closures, prototypical inheritance and JSMVC).</p>
-
-					    <ul class="separated">
-						    <li>C# <span class="quiet">(70%)</span></li>
-						    <li>SQL <span class="quiet">(25%)</span></li>
-						    <li>JavaScript <span class="quiet">(5%)</span></li>
-					    </ul>*/
-				    "</div>" +
-                    "<p>&nbsp;</p>"
-
-
-            };
-
             $(function () {
+                var template = handlebarsRegistrations();
+
                 $.ajax({
                     url: 'fixture/jim-andreasen.js',
                     dataType: 'json',
-                    /*data: data,*/
                     success: function (data, textStatus, jqXHR) {
-                        var modelData = data;
-                        var html = Mustache.to_html(template, modelData, partials);
+                        var html = template(data);
                         $("body").html(html);
-
                     },
-                    failure: function (data, textStatus, jqXHR) {
-                        $("body").html(textStatus);
-
+                    error: function (data, textStatus, jqXHR) {
+                        $("body").html('<h2>Error loading resume data</h2>' + data.statusText);
                     }
                 });
-
-
             });
-
         </script>
-
-
     </head>
-    <body>
-    
+    <body>  
     </body>
 </html>
