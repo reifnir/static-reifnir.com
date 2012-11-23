@@ -132,10 +132,15 @@
                     dataType: 'json',
                     success: function (data, textStatus, jqXHR) {
                         var html = template(data);
-                        $("body").html(html);
+
+
+                        $('#content')
+                            .hide()
+                            .html(html)
+                            .show('fast');
                     },
                     error: function (data, textStatus, jqXHR) {
-                        $("body").html('<h2>Error loading resume data</h2>' + data.statusText);
+                        $("#content").html('<h2>Error loading resume data</h2>' + data.statusText);
                     }
                 });
             });
@@ -155,6 +160,7 @@
 
         </script>
     </head>
-    <body>  
+    <body> 
+        <div id="content" />
     </body>
 </html>
