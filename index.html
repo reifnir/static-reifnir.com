@@ -11,41 +11,47 @@
 
         <script id="resume-template" type="text/x-handlebars-template">
             <div id="content" class="container_12">
-                {{#ContactInfo}}
-                    {{> contactInfo}}
-                {{/ContactInfo}}
-                {{#Skills}}
-                    <h1 class="grid_12">Skills</h1>
-			        <div class="section clearfix">
-				        <h3 class="grid_3">Professional</h3>
-				        <div class="grid_9">
-                            {{#Professional}}
-                                {{> skillInfo}}
-			                {{/Professional}}
-				        </div>
+                <section id='contact'>
+                    {{#ContactInfo}}
+                        {{> contactInfo}}
+                    {{/ContactInfo}}
+                </section>
+                <section id='skills'>
+                    {{#Skills}}
+                        <h1 class="grid_12">Skills</h1>
+                        <div class="section clearfix">
+                            <h3 class="grid_3">Professional</h3>
+                            <div class="grid_9">
+                                {{#Professional}}
+                                    {{> skillInfo}}
+                                {{/Professional}}
+                            </div>
 
-				        <h3 class="grid_3">Technologies</h3>
-				        <div class="grid_9">
-                            {{#Technologies}}
-                                {{> skillInfo}}
-			                {{/Technologies}}
-				        </div>
+                            <h3 class="grid_3">Technologies</h3>
+                            <div class="grid_9">
+                                {{#Technologies}}
+                                    {{> skillInfo}}
+                                {{/Technologies}}
+                            </div>
 
-				        <h3 class="grid_3">Software Development</h3>
-				        <div class="grid_9">
-                            {{#SoftwareDevelopment}}
-                                {{> skillInfo}}
-			                {{/SoftwareDevelopment}}
-				        </div>
+                            <h3 class="grid_3">Software Development</h3>
+                            <div class="grid_9">
+                                {{#SoftwareDevelopment}}
+                                    {{> skillInfo}}
+                                {{/SoftwareDevelopment}}
+                            </div>
+                        </div>
+                    {{/Skills}}
+                </section>
+
+                <section id='workExperience'>
+                    <h1 class="grid_12">Work Experience</h1>
+                    <div class="section clearfix">
+                        {{#WorkExperience}}
+                            {{> jobInfo}}
+                        {{/WorkExperience}}
                     </div>
-                {{/Skills}}
-
-        		<h1 class="grid_12">Work Experience</h1>
-		        <div class="section clearfix">
-                    {{#WorkExperience}}
-                        {{> jobInfo}}
-                    {{/WorkExperience}}
-		        </div>
+                </section>
             </div>
         </script>
 
