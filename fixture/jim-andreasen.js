@@ -149,6 +149,14 @@
                         "Url": "http://javascriptmvc.com"
                     },
                     {
+                        "Name": "handlebars.js",
+                        "Url": "http://handlebarsjs.com"
+                    },
+                    {
+                        "Name": "mustache.js",
+                        "Url": "https://github.com/janl/mustache.js"
+                    },
+                    {
                         "Name": "weld.js",
                         "Url": "https://github.com/hij1nx/weld"
                     }
@@ -158,7 +166,7 @@
                 "Name": "ORM",
                 "Children": [
                     {
-                        "Name": "Entity Framework 2 - 4.5",
+                        "Name": "Entity Framework 2 - 5",
                         "Url": "http://msdn.microsoft.com/en-us/data/ef.aspx"
                     },
                     {
@@ -290,10 +298,34 @@
     },
     "WorkExperience": [
         {
+            "CompanyName": "MedRisk, Inc.",
+            "StartDate": "2013-07-01T00:00:00",
+            "Title": "Sr. Software Engineer",
+            "Address": "King of Prussia, PA",
+            "Description": "Lead migration effort of legacy implementations to .NET. Work with architect in establishing new platform and standards. Analysis of business needs and identification of current implementation.",
+            "LanguageConcentration": [
+                { "Name": "C#", "Weight": 0.65 },
+                { "Name": "SQL", "Weight": 0.35 }
+            ]
+        },
+        {
+            "CompanyName": "Siemens",
+            "StartDate": "2013-04-01T00:00:00",
+            "EndDate": "2013-07-01T00:00:00",
+            "Title": "Software Developer Lead",
+            "Address": "Malvern, PA",
+            "Description": "Short-term contract to work with architect in order to deliver several work orders required for Siemens to comply with new federal regulations. In addition to solving the problems at hand, I was tasks with delivering working examples for and coaching members of the development team with modern principles of software development such as: SOLID design, unit testing, mocking, ORM, etc.",
+            "LanguageConcentration": [
+                { "Name": "C#", "Weight": 0.85 },
+                { "Name": "JavaScript", "Weight": 0.1 },
+                { "Name": "SQL", "Weight": 0.05 }
+            ]
+        },
+        {
             "CompanyName": "PointRoll, Inc.",
             "StartDate": "2010-07-01T00:00:00",
             "EndDate": "2013-03-01T00:00:00",
-            "Title": "Sr. Software Engineer",
+            "Title": "Architect, Sr. Software Engineer",
             "Address": "King of Prussia, PA",
             "Description": "Individually completed a partially implemented and abandoned-as-impossible attempt at rearchitecting their core application leveraging Dependency Injection and Repository patterns. Was a principle leader in shaping and implementing the API/backend design of the core application's more-UX focused reboot as a RESTful, more unit-testable API. Provided mentoring and assistance for other developers in algorithms, troubleshooting and design. Was a leading contributor to the new rule-based dynamic content service's early development project. Received the peer nominated, management approved Roller of the year award in 2011. The majority of development was done in C# 4.0 in ASP.NET MVC3 (TDD, Repo pattern, IoC => DI, MVC3 as a JSON REST API and extensive use of LINQ), WCF (service per-request, custom handlers and behavior, SOAP, WebApi and CodePlex WCF Web API), and JavaScript (closures, prototypical inheritance and JSMVC).",
             "LanguageConcentration": [
