@@ -293,6 +293,23 @@
                         "Name": "Identification and mitigation of side-effect prone code"
                     }
                 ]
+            },
+            {
+                "Name": "Codility Coding Challenge Certificates",
+                "Children": [
+					{
+						"Name": "Boron 2013 - Gold",
+						"Url": "http://codility.com/cert/view/certY4KX9F-KZQBH6SGGXCH4SWJ"
+					},
+                    {
+                        "Name": "Beryllium 2013 - Gold",
+                        "Url": "http://codility.com/cert/view/certQRQN9T-J4QP8J7DP3EXFKQ8"
+                    },
+                    {
+                        "Name": "Lithium 2013 - Silver",
+                        "Url": "http://codility.com/cert/view/certK9BDYH-5T5KP88FNSXQRM3B"
+                    }
+                ]
             }
         ]
     },
