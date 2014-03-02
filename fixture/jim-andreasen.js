@@ -30,10 +30,6 @@
                         "Url": "http://en.wikipedia.org/wiki/Functional_programming"
                     },
                     {
-                        "Name": "ORM",
-                        "Url": "http://en.wikipedia.org/wiki/Object-relational_mapping"
-                    },
-                    {
                         "Name": "AOP",
                         "Url": "http://en.wikipedia.org/wiki/Aspect-oriented_programming"
                     }
