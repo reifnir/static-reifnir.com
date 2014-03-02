@@ -69,7 +69,7 @@
                         "Name": "Observer"
                     },
                     {
-                        "Name": "Repository (both Generic and Concrete)"
+                        "Name": "Repository (both PoEAA and DDD flavors)"
                     },
                     {
                         "Name": "Singleton"
@@ -78,7 +78,7 @@
                         "Name": "Unit of Work"
                     },
                     {
-                        "Name": "Double-checked locking"
+                        "Name": "Double-checked Locking"
                     },
                     {
                         "Name": "Lazy Initialization"
@@ -200,6 +200,10 @@
                         "Url": "http://www.jetbrains.com/teamcity"
                     },
                     {
+                        "Name": "NUnit",
+                        "Url": "http://www.nunit.org"
+                    },
+                    {
                         "Name": "Visual Studio Unit Testing Framework / MSTest",
                         "Url": "http://msdn.microsoft.com/en-us/library/ms243147%28v=vs.80%29.aspx"
                     },
@@ -232,8 +236,7 @@
                         "Name": "HTML / XHTML"
                     },
                     {
-                        "Name": "CSS",
-                        "Url": ""
+                        "Name": "CSS"
                     },
                     {
                         "Name": "XML"
