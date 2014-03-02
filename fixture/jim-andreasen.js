@@ -22,12 +22,12 @@
                         "Url": "http://en.wikipedia.org/wiki/Object-oriented_programming"
                     },
                     {
-                        "Name": "FP",
-                        "Url": "http://en.wikipedia.org/wiki/Functional_programming"
-                    },
-                    {
                         "Name": "SOA",
                         "Url": "http://en.wikipedia.org/wiki/Service-oriented_architecture"
+                    },
+                    {
+                        "Name": "FP",
+                        "Url": "http://en.wikipedia.org/wiki/Functional_programming"
                     },
                     {
                         "Name": "ORM",
