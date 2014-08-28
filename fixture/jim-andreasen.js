@@ -18,16 +18,16 @@
                 "Name": "Backend and Web Development and Design",
                 "Children": [
                     {
+                        "Name": "SOA",
+                        "Url": "http://en.wikipedia.org/wiki/Service-oriented_architecture"
+                    },
+                    {
                         "Name": "OOP",
                         "Url": "http://en.wikipedia.org/wiki/Object-oriented_programming"
                     },
                     {
                         "Name": "FP",
                         "Url": "http://en.wikipedia.org/wiki/Functional_programming"
-                    },
-                    {
-                        "Name": "SOA",
-                        "Url": "http://en.wikipedia.org/wiki/Service-oriented_architecture"
                     },
                     {
                         "Name": "ORM",
@@ -107,16 +107,16 @@
                 "Url": "http://msdn.microsoft.com/en-us/vstudio/hh341490.aspx",
                 "Children": [
                     {
-                        "Name": "ASP.NET MVC 2 - 4",
+                        "Name": "WCF",
+                        "Url": "http://msdn.microsoft.com/en-us/library/ms731082.aspx"
+                    },
+                    {
+                        "Name": "ASP.NET MVC 2 - 5",
                         "Url": "http://www.asp.net/mvc"
                     },
                     {
-                        "Name": "ASP.NET Web API",
+                        "Name": "ASP.NET Web API 2",
                         "Url": "http://www.asp.net/web-api"
-                    },
-                    {
-                        "Name": "WCF (REST / SOAP / net.tcp)",
-                        "Url": "http://msdn.microsoft.com/en-us/library/ms731082.aspx"
                     },
                     {
                         "Name": "LINQ",
@@ -128,12 +128,16 @@
                 "Name": "Databases",
                 "Children": [
                     {
-                        "Name": "SQL Server 7.0 - 2008 R2",
+                        "Name": "SQL Server 7.0 - 2012 R2",
                         "Url": "http://www.microsoft.com/sql"
                     },
                     {
                         "Name": "RavenDB (NoSQL)",
                         "Url": "http://ravendb.net"
+                    },
+                    {
+                        "Name": "Oracle 11g",
+                        "Url": "http://www.oracle.com/us/products/database/overview/index.html"
                     }
                 ]
             },
@@ -143,6 +147,10 @@
                     {
                         "Name": "jQuery 1.2 - 1.8.x",
                         "Url": "http://jquery.com/"
+                    },
+                    {
+                        "Name": "AngularJS",
+                        "Url": "https://angularjs.org/"
                     },
                     {
                         "Name": "JavaScriptMVC",
@@ -189,6 +197,10 @@
                     {
                         "Name": "Ninject",
                         "Url": "http://www.ninject.org"
+                    },
+                    {
+                        "Name": "Castle Windsor",
+                        "Url": "http://docs.castleproject.org/"
                     }
                 ]
             },
@@ -196,8 +208,12 @@
                 "Name": "Continuous Integration and Unit Testing",
                 "Children": [
                     {
-                        "Name": "TeamCity 6.0",
+                        "Name": "TeamCity 6.0 - 7.0",
                         "Url": "http://www.jetbrains.com/teamcity"
+                    },
+                    {
+                        "Name": "PowerShell 2.0 - 3.0",
+                        "Url": "http://technet.microsoft.com/en-us/scriptcenter/powershell.aspx"
                     },
                     {
                         "Name": "Visual Studio Unit Testing Framework / MSTest",
@@ -239,7 +255,7 @@
                         "Name": "XML"
                     },
                     {
-                        "Name": "SignalR (Websockets)",
+                        "Name": "SignalR (Web Sockets) 1 - 2",
                         "Url": "http://signalr.net"
                     }
                 ]
@@ -263,6 +279,14 @@
                 "Name": "Software Architecture Design",
                 "Children": [
                     {
+                        "Name": "Volatility-based decomposition",
+                        "Url": "https://www.youtube.com/watch?v=VIC7QW62-Tw"
+                    },
+                    {
+                        "Name": "Project design",
+                        "Url": "http://www.idesign.net/Training/Project-Design-Master-Class"
+                    },
+                    {
                         "Name": "Troubleshooting and predicting far-downstream effects of design decisions"
                     },
                     {
@@ -284,7 +308,7 @@
                 "Name": "Code Maintenance",
                 "Children": [
                     {
-                        "Name": "Refactoring and algorithmic optimization"
+                        "Name": "Refactoring and reduction in algorithmic complexity"
                     },
                     {
                         "Name": "Present effective business requirements from existing code"
@@ -316,7 +340,20 @@
     "WorkExperience": [
         {
             "CompanyName": "MedRisk, Inc.",
+            "StartDate": "2013-11-01T00:00:00",
+            "Title": "Sr. Software Engineer",
+            "Address": "King of Prussia, PA",
+            "Description": "Recommend and design cloud solutions based on an enterprise's unique policy, process and technical requirements. Diagnose, troubleshoot and resolve customer issues relating to developer operations, cloud infrastructure and applications. Refactor existing applications for SaaS-enablement and distributed cloud hosting on the Apprenda PaaS platform. POC development, Apprenda extensions.",
+            "LanguageConcentration": [
+                { "Name": "WCF", "Weight": 0.7 },
+                { "Name": "C#", "Weight": 0.25 },
+                { "Name": "PL-SQL", "Weight": 0.05 }
+            ]
+        },
+        {
+            "CompanyName": "MedRisk, Inc.",
             "StartDate": "2013-07-01T00:00:00",
+            "EndDate": "2013-11-01T00:00:00",
             "Title": "Sr. Software Engineer",
             "Address": "King of Prussia, PA",
             "Description": "Lead migration effort of legacy implementations to .NET. Work with architect in establishing new platform and standards. Analysis of business needs and identification of current implementation.",
