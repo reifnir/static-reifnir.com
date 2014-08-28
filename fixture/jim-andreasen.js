@@ -9,7 +9,6 @@
             "State": "PA",
             "ZipCode": "19301"
         },
-        "Phone": "484-324-8829",
         "Web": "reifnir.com"
     },
     "Skills": {
