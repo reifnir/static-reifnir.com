@@ -229,12 +229,12 @@
                 "Name": "Version Control (client and admin)",
                 "Children": [
                     {
-                        "Name": "Visual SVN",
-                        "Url": "http://www.visualsvn.com"
+                        "Name": "SVN",
+                        "Url": "http://subversion.apache.org"
                     },
                     {
-                        "Name": "GitHub",
-                        "Url": "https://github.com"
+                        "Name": "Git",
+                        "Url": "http://git-scm.com"
                     },
                     {
                         "Name": "Visual SourceSafe"
@@ -290,6 +290,9 @@
                         "Name": "Troubleshooting and predicting far-downstream effects of design decisions"
                     },
                     {
+                        "Name": "Cloud and distributed architecture (as well as PaaS and SaaS)"
+                    },
+                    {
                         "Name": "QA, unit and integration tests"
                     },
                     {
@@ -342,7 +345,7 @@
             "CompanyName": "Apprenda, Inc.",
             "StartDate": "2013-11-01T00:00:00",
             "Title": "Software Engineer, Client Services",
-            "Address": "Troy, NY (remotely) King of Prussia, PA (on site with client)",
+            "Address": "Troy, NY and King of Prussia, PA",
             "Description": "Recommend and design cloud solutions based on an enterprise's unique policy, process and technical requirements. Diagnose, troubleshoot and resolve customer issues relating to developer operations, cloud infrastructure and applications. Refactor existing applications for SaaS-enablement and distributed cloud hosting on the Apprenda PaaS platform. POC development, Apprenda extensions.",
             "LanguageConcentration": [
                 { "Name": "WCF", "Weight": 0.7 },
@@ -460,6 +463,6 @@
             "Description": "Responsible for building, troubleshooting, and networking of PCs. Programming experience in Perl, Visual Basic, and HTML."
         }
     ],
-    "UpdateDate": "2012-11-15T05:16:11",
+    "UpdateDate": "2014-08-27T23:54:11",
     "Id": "jim-andreasen"
 }
