@@ -339,10 +339,10 @@
     },
     "WorkExperience": [
         {
-            "CompanyName": "MedRisk, Inc.",
+            "CompanyName": "Apprenda, Inc.",
             "StartDate": "2013-11-01T00:00:00",
-            "Title": "Sr. Software Engineer",
-            "Address": "King of Prussia, PA",
+            "Title": "Software Engineer, Client Services",
+            "Address": "Remotely: Troy, NY, On client site: King of Prussia, PA",
             "Description": "Recommend and design cloud solutions based on an enterprise's unique policy, process and technical requirements. Diagnose, troubleshoot and resolve customer issues relating to developer operations, cloud infrastructure and applications. Refactor existing applications for SaaS-enablement and distributed cloud hosting on the Apprenda PaaS platform. POC development, Apprenda extensions.",
             "LanguageConcentration": [
                 { "Name": "WCF", "Weight": 0.7 },
