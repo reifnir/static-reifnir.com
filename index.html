@@ -63,12 +63,13 @@
                     <p>
                         <a href="mailto: {{Email}}">{{Email}}</a><br/>
                         <!--{{Phone}}<br/>-->
-                        <a href="http://{{Web}}">{{Web}}</a>
-				</p>
-				{{#Address}}<p>
-					{{Address}}<br/>
-					{{City}}, {{State}} {{ZipCode}}
-				</p>{{/Address}}
+                        <a href="http://{{Web}}">{{Web}}</a>				
+        				<br />
+                        {{#Address}}
+    					    {{Address}}<br/>
+	    				    {{City}}, {{State}} {{ZipCode}}
+		    		    {{/Address}}
+                    </p>
 			</div>
         </script>
 
