@@ -88,8 +88,8 @@
 			<h3 class="grid_3">{{CompanyName}} <span class="location">{{Address}}</span></h3>
 			<div class="grid_9">
 				<h4>{{Title}}</h4>
-				<p>{{dateFormat StartDate format="MMMM YYYY"}} <span class="quiet">to</span> {{dateFormat EndDate format="MMMM YYYY"}}</p>
-				<p class="description">{{Description}}</p>
+				{{dateFormat StartDate format="MMMM YYYY"}} <span class="quiet">to</span> {{dateFormat EndDate format="MMMM YYYY"}}
+				<div class="description">{{Description}}</div>
 
                 {{#if LanguageConcentration}}<ul class="separated">{{/if}}
                     {{#LanguageConcentration}}
