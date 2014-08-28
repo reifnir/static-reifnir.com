@@ -60,16 +60,14 @@
             <div class="section clearfix">
                 <h3 class="grid_3">{{FirstName}} {{LastName}}</h3>
                 <div class="grid_9">
-                    <p>
-                        <a href="mailto: {{Email}}">{{Email}}</a><br/>
-                        <!--{{Phone}}<br/>-->
-                        <a href="http://{{Web}}">{{Web}}</a>				
-        				<br />
-                        {{#Address}}
-    					    {{Address}}<br/>
-	    				    {{City}}, {{State}} {{ZipCode}}
-		    		    {{/Address}}
-                    </p>
+                    <a href="mailto: {{Email}}">{{Email}}</a><br/>
+                    <!--{{Phone}}<br/>-->
+                    <a href="http://{{Web}}">{{Web}}</a>				
+        			<br />
+                    {{#Address}}
+    					{{Address}}<br/>
+	    				{{City}}, {{State}} {{ZipCode}}
+		    		{{/Address}}
 			</div>
         </script>
 
