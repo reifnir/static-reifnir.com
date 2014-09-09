@@ -42,16 +42,16 @@
                 "Name": "Database Development",
                 "Children": [
                     {
-                        "Name": "design"
+                        "Name": "Design"
                     },
                     {
-                        "Name": "implementation"
+                        "Name": "Implementation"
                     },
                     {
-                        "Name": "advanced optimization"
+                        "Name": "Advanced optimization"
                     },
                     {
-                        "Name": "execution plan analysis"
+                        "Name": "Execution plan analysis"
                     }
                 ]
             },
@@ -298,10 +298,6 @@
                         "Name": "Technical and business analysis"
                     },
                     {
-                        "Name": "Agile project management (directly trained by Rally)",
-                        "Url": "http://www.rallydev.com/services/ready-set-sprint"
-                    },
-                    {
                         "Name": "Mentoring"
                     }
                 ]
@@ -321,19 +317,23 @@
                 ]
             },
             {
-                "Name": "Codility Coding Challenge Certificates",
+                "Name": "Training",
                 "Children": [
 					{
-						"Name": "Boron 2013 - Gold",
-						"Url": "http://codility.com/cert/view/certY4KX9F-KZQBH6SGGXCH4SWJ"
+						"Name": "IDesign Architect's Master Class (Juval Lowy)",
+						"Url": "http://www.idesign.net/Training/Architect-Master-Class"
 					},
                     {
-                        "Name": "Beryllium 2013 - Gold",
-                        "Url": "http://codility.com/cert/view/certQRQN9T-J4QP8J7DP3EXFKQ8"
+                        "Name": "IDesign Project Design Master Class (Juval Lowy)",
+                        "Url": "http://www.idesign.net/Training/Project-Design-Master-Class"
                     },
                     {
-                        "Name": "Lithium 2013 - Silver",
-                        "Url": "http://codility.com/cert/view/certK9BDYH-5T5KP88FNSXQRM3B"
+                        "Name": "IDesign Architecture Clinic (upcoming Feb 2015, Michael Montgomery)",
+                        "Url": "http://www.idesign.net/Training/Project-Design-Master-Class"
+                    },
+                    {
+                        "Name": "Agile project management (Rally)",
+                        "Url": "http://www.rallydev.com/services/ready-set-sprint"
                     }
                 ]
             }
