@@ -17,20 +17,16 @@
                 "Name": "Backend and Web Development and Design",
                 "Children": [
                     {
-                        "Name": "SOA",
+                        "Name": "Serive Orientation",
                         "Url": "http://en.wikipedia.org/wiki/Service-oriented_architecture"
                     },
                     {
-                        "Name": "OOP",
+                        "Name": "Object Orientation",
                         "Url": "http://en.wikipedia.org/wiki/Object-oriented_programming"
                     },
                     {
-                        "Name": "FP",
+                        "Name": "Functional Programming",
                         "Url": "http://en.wikipedia.org/wiki/Functional_programming"
-                    },
-                    {
-                        "Name": "ORM",
-                        "Url": "http://en.wikipedia.org/wiki/Object-relational_mapping"
                     },
                     {
                         "Name": "AOP",
@@ -48,10 +44,7 @@
                         "Name": "Implementation"
                     },
                     {
-                        "Name": "Advanced optimization"
-                    },
-                    {
-                        "Name": "Execution plan analysis"
+                        "Name": "Execution plan analysis and optimization"
                     }
                 ]
             },
@@ -96,6 +89,18 @@
                     },
                     {
                         "Name": "Prototype"
+                    },
+                    {
+                        "Name": "Cache-aside Pattern"
+                    },
+                    {
+                        "Name": "External Configuration Store Pattern"
+                    },
+                    {
+                        "Name": "Federated Identity Pattern"
+                    },
+                    {
+                        "Name": "CQRS"
                     }
                 ]
             }
@@ -135,7 +140,7 @@
                         "Url": "http://ravendb.net"
                     },
                     {
-                        "Name": "Oracle 11g",
+                        "Name": "Oracle 11g, 12c",
                         "Url": "http://www.oracle.com/us/products/database/overview/index.html"
                     }
                 ]
@@ -328,7 +333,7 @@
                         "Url": "http://www.idesign.net/Training/Project-Design-Master-Class"
                     },
                     {
-                        "Name": "IDesign Architecture Clinic (upcoming Feb 2015, Michael Montgomery)",
+                        "Name": "IDesign Architecture Clinic (upcoming April 2015, Michael 'Monty' Montgomery)",
                         "Url": "http://www.idesign.net/Training/Project-Design-Master-Class"
                     },
                     {
@@ -345,10 +350,11 @@
             "StartDate": "2013-11-01T00:00:00",
             "Title": "Software Engineer, Client Services",
             "Address": "Troy, NY and King of Prussia, PA",
-            "Description": "Recommend and design cloud solutions based on an enterprise's unique policy, process and technical requirements. Diagnose, troubleshoot and resolve customer issues relating to developer operations, cloud infrastructure and applications. Refactor existing applications for SaaS-enablement and distributed cloud hosting on the Apprenda PaaS platform. POC development, Apprenda extensions.",
+            "Description": "Recommend and design distributed and cloud-suitable solutions for enterprise applications with consideration for a customer's unique policy, process and technical requirements. Diagnose, troubleshoot and resolve customer issues relating to developer operations, cloud infrastructure and hosted applications. Refactor existing applications for SaaS-enablement and distributed hosting on the Apprenda PaaS platform. POC development, leading group training for diverse audiences, extensive development and creation of custom Apprenda extensions primarily for cross-app communication and automation.",
             "LanguageConcentration": [
                 { "Name": "WCF", "Weight": 0.7 },
-                { "Name": "C#", "Weight": 0.25 },
+                { "Name": "C#", "Weight": 0.2 },
+                { "Name": "T-SQL", "Weight": 0.05 },
                 { "Name": "PL-SQL", "Weight": 0.05 }
             ]
         },
@@ -358,7 +364,7 @@
             "EndDate": "2013-11-01T00:00:00",
             "Title": "Sr. Software Engineer",
             "Address": "King of Prussia, PA",
-            "Description": "Lead migration effort of legacy implementations to .NET. Work with architect in establishing new platform and standards. Analysis of business needs and identification of current implementation.",
+            "Description": "Short-term contract to lead migration effort of legacy implementations to .NET. Work with architect in establishing new platform and standards. Analysis of business needs and current implementation.",
             "LanguageConcentration": [
                 { "Name": "C#", "Weight": 0.65 },
                 { "Name": "SQL", "Weight": 0.35 }
@@ -368,9 +374,9 @@
             "CompanyName": "Siemens",
             "StartDate": "2013-04-01T00:00:00",
             "EndDate": "2013-07-01T00:00:00",
-            "Title": "Software Developer Lead",
+            "Title": "Lead Software Developer",
             "Address": "Malvern, PA",
-            "Description": "Short-term contract to work with architect in order to deliver several work orders required for Siemens to comply with new federal regulations. In addition to solving the problems at hand, I was tasks with delivering working examples for and coaching members of the development team with modern principles of software development such as: SOLID design, unit testing, mocking, ORM, etc.",
+            "Description": "Short-term contract to work with architect in order to deliver several work orders required federal regulation compliance. In addition to solving the problems at hand, I was tasked with coaching and giving examples to members of the development team with modern principles of software development such as: SOLID design, unit testing, mocking, ORM, etc.",
             "LanguageConcentration": [
                 { "Name": "C#", "Weight": 0.85 },
                 { "Name": "JavaScript", "Weight": 0.1 },
@@ -383,7 +389,7 @@
             "EndDate": "2013-03-01T00:00:00",
             "Title": "Architect, Sr. Software Engineer",
             "Address": "King of Prussia, PA",
-            "Description": "Individually completed a partially implemented and abandoned-as-impossible attempt at rearchitecting their core application leveraging Dependency Injection and Repository patterns. Was a principle leader in shaping and implementing the API/backend design of the core application's more-UX focused reboot as a RESTful, more unit-testable API. Provided mentoring and assistance for other developers in algorithms, troubleshooting and design. Was a leading contributor to the new rule-based dynamic content service's early development project. Received the peer nominated, management approved Roller of the year award in 2011. The majority of development was done in C# 4.0 in ASP.NET MVC3 (TDD, Repo pattern, IoC => DI, MVC3 as a JSON REST API and extensive use of LINQ), WCF (service per-request, custom handlers and behavior, SOAP, WebApi and CodePlex WCF Web API), and JavaScript (closures, prototypical inheritance and JSMVC).",
+            "Description": "Rearchitected core application leveraging IoC to break apart a knot of circular dependencies. Lead shaping and implementation of backend design of the core application's more-UX focused reboot as a RESTful, testable API. Mentored and assisted for other developers in design, troubleshooting and optimization. Was a leading contributor to a rule-based dynamic content service. Received the peer nominated, management approved Roller (employee) of the year award in 2011. The majority of development was done in C# 4.0 in ASP.NET MVC3 (TDD, Repo pattern, IoC => DI, MVC3 as a JSON business use case-oriented REST API), WCF (service per-request, custom handlers and behaviors, SOAP, WebApi and CodePlex WCF Web API), and JavaScript (closures, prototypical inheritance and JSMVC).",
             "LanguageConcentration": [
                 { "Name": "C#", "Weight": 0.7 },
                 { "Name": "SQL", "Weight": 0.25 },
@@ -396,7 +402,7 @@
             "EndDate": "2010-06-01T00:00:00",
             "Title": "Sr. Developer",
             "Address": "Conshohocken, PA",
-            "Description": "Primarily responsible for supplanting a broken, internal benefit management system for the company's 58k employees assigned to over 200 distinct plans. The majority of development was done in C# 3.5 class libraries and an ASP.NET front end and T-SQL. XSLT, SSIS, SSRS, VB6, and VB.NET 1.1 were also used to a much lesser extent. Other projects included: EDI, an Active Directory class library, a DataTable to Excel FileStream web service and XHTML and CSS W3C compliance.",
+            "Description": "Responsible for supplanting legacy benefit management and tracking system for the company's 58k employees assigned to over 200 distinct plans. The majority of development was done in C# 3.5 leveraging LINQ, ASP.NET and jQuery driven front end and T-SQL. XSLT, SSIS, SSRS, VB6, and VB.NET 1.1 were also used to a lesser extent. Other projects include: ClickOnce deployment, EDI, an LDAP query service, an Excel conversion web service and W3C compliance with XHTML and CSS standards.",
             "LanguageConcentration": [
                 { "Name": "SQL", "Weight": 0.65 },
                 { "Name": "C#", "Weight": 0.3 },
@@ -410,7 +416,7 @@
             "EndDate": "2008-03-01T00:00:00",
             "Title": "Sr. Developer",
             "Address": "King of Prussia, PA",
-            "Description": "Programming focus was object oriented and database design and development. Programming predominantly done in C#, T-SQL, VB6 and Access VBA. Projects include creation of COM Objects/DLLs, Web Services, SSRS web service integration, automation applications, MSSQL Procedures, index optimization, data manipulation, automated email/attachment to image conversion service, and creation of rules based routing engines. In addition to programming, project design, mentoring new programmers and requirement gathering were necessary from all levels within the organization. Five years of experience attaining healthcare industry and medical billing business knowledge.",
+            "Description": "Programming focus was object oriented and database design and development. Programming predominantly done in C#, T-SQL, VB6 and Access VBA. Projects include creation of COM Objects/DLLs, web services, SSRS web service integration, automation applications, stored procedures, index optimization, automated email and attachment image capture service, and creation of rules based routing engines. In addition to programming: project design, mentoring junior programmers, requirement gathering from all levels within the organization and technical writing. Five years of experience attaining healthcare industry and medical billing business knowledge.",
             "LanguageConcentration": [
                 { "Name": "C#", "Weight": 0.60 },
                 { "Name": "SQL", "Weight": 0.30 },
@@ -424,7 +430,7 @@
             "EndDate": "2006-10-01T00:00:00",
             "Title": "Programmer Analyst",
             "Address": "Exton, PA",
-            "Description": "Programming focus was on object oriented distributed processing in an n-tier architecture in VB6, T-SQL, and XML for loan booking front end. Projects included: creation of COM Objects/DLLs, subclassing a web browser control for kiosk-like control over web functionality and event processing. Database storage and integration of PDF files as a means of document management, designed database archival process with on-demand retrieval processing. Business knowledge attained in loan booking aspects of the banking industry.",
+            "Description": "Programming focus was on object oriented distributed processing in an n-tier architecture in VB6 (DCOM), T-SQL, and XML for loan booking front end. Projects included: creation and maintenance of COM Objects/DLLs, creating a web browser control for kiosk-like control over web functionality and event interception. Database storage and integration of PDF files as a means of document management, designed database archival process with on-demand retrieval processing. Business knowledge attained in loan booking aspects of the banking industry.",
             "LanguageConcentration": [
                 { "Name": "VB6", "Weight": 0.8 },
                 { "Name": "SQL", "Weight": 0.1 },
@@ -451,7 +457,7 @@
             "EndDate": "2001-02-01T00:00:00",
             "Title": "Network Administrator",
             "Address": "Butler, NJ",
-            "Description": "Built and maintained a network and Web site for an Internet-based digital dictation and document transfer website. Functional support included troubleshooting and networking of PCs. Programming experience in ASP, VBScript, and integration of ActiveX components. I was the sole member of the technical staff."
+            "Description": "Developed and maintained infrastructure and Classic ASP web site for a digital dictation and document transfer website. Experience in ASP, VBScript, and ActiveX components. I was the sole member of the technical staff."
         },
         {
             "CompanyName": "Lion Technology",
@@ -462,6 +468,6 @@
             "Description": "Responsible for building, troubleshooting, and networking of PCs. Programming experience in Perl, Visual Basic, and HTML."
         }
     ],
-    "UpdateDate": "2014-08-27T23:54:11",
+    "UpdateDate": "2015-03-23T23:08:40",
     "Id": "jim-andreasen"
 }
