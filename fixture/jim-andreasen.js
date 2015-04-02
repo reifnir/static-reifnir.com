@@ -348,7 +348,7 @@
         {
             "CompanyName": "Apprenda, Inc.",
             "StartDate": "2013-11-01T00:00:00",
-            "Title": "Software Engineer, Client Services",
+            "Title": "Solutions Architect, Client Services",
             "Address": "Troy, NY and King of Prussia, PA",
             "Description": "Recommend and design distributed and cloud-suitable solutions for enterprise applications with consideration for a customer's unique policy, process and technical requirements. Diagnose, troubleshoot and resolve customer issues relating to developer operations, cloud infrastructure and hosted applications. Refactor existing applications for SaaS-enablement and distributed hosting on the Apprenda PaaS platform. POC development, leading group training for diverse audiences, extensive development and creation of custom Apprenda extensions primarily for cross-app communication and automation.",
             "LanguageConcentration": [
