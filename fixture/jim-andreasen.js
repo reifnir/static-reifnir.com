@@ -333,7 +333,7 @@
                         "Url": "http://www.idesign.net/Training/Project-Design-Master-Class"
                     },
                     {
-                        "Name": "IDesign Architecture Clinic (upcoming April 2015, Michael 'Monty' Montgomery)",
+                        "Name": "IDesign Architecture Clinic (Michael 'Monty' Montgomery)",
                         "Url": "http://www.idesign.net/Training/Project-Design-Master-Class"
                     },
                     {
