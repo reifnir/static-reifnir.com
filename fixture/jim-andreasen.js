@@ -290,13 +290,13 @@
                         "Url": "http://www.idesign.net/Training/Project-Design-Master-Class"
                     },
                     {
-                        "Name": "Maintain focus on total cost of ownership"
-                    },
-                    {
                         "Name": "Cloud/distributed architecture (as well as PaaS and SaaS)"
                     },
                     {
                         "Name": "Technical and business analysis"
+                    },
+                    {
+                        "Name": "Maintain focus on total cost of ownership"
                     },
                     {
                         "Name": "Mentoring"
@@ -332,7 +332,7 @@
             "StartDate": "2015-08-01T00:00:00",
             "Title": "Solutions Architect",
             "Address": "Souderton, PA",
-            "Description": "Primarily responsible for reducing the cost and time required to prepare and maintain studies for the company's flagship clinical trial management system, overseeing multiple development teams, and delivering both designs and hands-on solutions for cross-cutting concerns. Partner with product owners by analyzing business problems, providing viable options and estimations, and facilitate aligning them with the study-level business unit. Collaborate with a small team of fellow architects to ensure consistent guidance and a clear vision for technical solutions. Provide technical leadership and mentoring to development team leads and their subordinates.",
+            "Description": "Primarily responsible for overseeing multiple development teams, delivering both designs and hands-on solutions for cross-cutting concerns, reducing the cost and time required to prepare and maintain studies for the company's flagship clinical trial management system. Partner with product owners by analyzing business problems, providing viable options and estimations, and facilitate aligning them with the study-level business unit. Collaborate with a small team of fellow architects to ensure consistent guidance and a clear vision for technical solutions. Provide technical leadership and mentoring to development team leads and their subordinates.",
             "LanguageConcentration": [
                 { "Name": "NServiceBus", "Weight": 0.5 },
                 { "Name": "C#", "Weight": 0.4 },
@@ -346,7 +346,7 @@
             "EndDate": "2015-08-01T00:00:00",
             "Title": "Solutions Architect, Client Services",
             "Address": "Troy, NY and King of Prussia, PA",
-            "Description": "Recommend and design enterprise client solutions for cloud-suitability with consideration for a customer's unique policy, process and technical requirements. Diagnose, troubleshoot and resolve customer issues relating to developer operations, cloud infrastructure and hosted applications. Factor existing applications for SaaS-enablement and distributed hosting on the Apprenda PaaS platform. POC development, leading group training for diverse audiences, extensive development and creation of custom Apprenda platform extensions primarily for cross-app communication and automation.",
+            "Description": "Recommend and design enterprise client solutions for cloud-suitability with consideration for a customer's unique policy, process and technical requirements. Diagnose, troubleshoot and resolve customer issues relating to developer operations, cloud infrastructure and hosted applications. Factor existing applications for SaaS-enablement and distributed hosting on the Apprenda PaaS platform. Develop POCs, lead group training for diverse audiences, and extensively develop and create custom Apprenda platform extensions for cross-app communication and automation.",
             "LanguageConcentration": [
                 { "Name": "WCF", "Weight": 0.50 },
                 { "Name": "C#", "Weight": 0.25 },
@@ -386,7 +386,7 @@
             "EndDate": "2013-03-01T00:00:00",
             "Title": "Architect, Sr. Software Engineer",
             "Address": "King of Prussia, PA",
-            "Description": "Rearchitected core application leveraging IoC to break apart a knot of circular dependencies. Lead shaping and implementation of backend design to the core application's more-UX focused reboot as a RESTful, testable API. Was a leading contributor to a rule-based dynamic ad content service. Received the peer nominated, management approved Roller (employee) of the year award in 2011. The majority of development was done in C# 4.0 in ASP.NET MVC3 (TDD, Repo pattern, DI => IoC, MVC3 as a JSON, use case-oriented REST API), WCF (per-request, custom handlers and behaviors, SOAP, WebApi and CodePlex WCF Web API), and JavaScript (closures, prototypical inheritance and client-side MVC).",
+            "Description": "Rearchitected core application leveraging IoC to break apart a knot of circular dependencies. Lead shaping and implementation of backend design to the core application's more-UX focused reboot as a RESTful, testable API. Acted as a leading contributor to a rule-based dynamic ad content service. Received the peer nominated, management approved Roller (employee) of the year award in 2011.",
             "LanguageConcentration": [
                 { "Name": "C#", "Weight": 0.7 },
                 { "Name": "SQL", "Weight": 0.25 },
