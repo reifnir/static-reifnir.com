@@ -48,7 +48,9 @@
                     <h1 class="grid_12">Work Experience</h1>
                     <div class="section clearfix">
                         {{#WorkExperience}}
-                            {{> jobInfo}}
+                            {{#unless IsArchived }}
+                                {{> jobInfo}}
+                            {{/unless}}
                         {{/WorkExperience}}
                     </div>
                 </section>
