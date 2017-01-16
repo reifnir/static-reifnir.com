@@ -329,7 +329,7 @@
             "TerminalDate": "2016-08-28T00:00:00",
             "Title": "Consultant",
             "Address": "King of Prussia, PA",
-            "Description": "Continuing work providing foundation to cloud-enable existing enterprise products. Delivering dev ops tooling and a provider-based programming model to abstract the platform were essential in order to continue supporting existing on-prem customers. Along with the rest of our small team, provide individual product teams architectural and technical guidance, for PaaS and SaaS-enablment. Additional projects also involved customizing log4j 1.2 source for an adapter, as well as Docker.",
+            "Description": "Continuation of work started in the course of duties as an Apprenda consultant. Responsibilities include providing foundation to cloud-enable existing enterprise products. Delivering dev ops tooling and a provider-based programming model to abstract the platform (essential to supporting existing on-prem customers). Provide individual product teams architectural and technical guidance for PaaS and SaaS-enablment. Additional work: customizing log4j 1.2 source for an adapter, Docker on Apprenda, and ADFS 3.0 administration.",
             "LanguageConcentration": [
                 { "Name": "C#", "Weight": 0.3 },
                 { "Name": "PowerShell", "Weight": 0.3 },
