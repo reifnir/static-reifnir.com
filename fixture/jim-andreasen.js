@@ -4,10 +4,10 @@
         "LastName": "Andreasen",
         "Email": "jim.andreasen@reifnir.com",
         "Address": {
-            "Address": "82 W Central Ave",
-            "City": "Paoli",
+            "Address": "PO Box 243",
+            "City": "Malvern",
             "State": "PA",
-            "ZipCode": "19301"
+            "ZipCode": "19355"
         },
         "Web": "reifnir.com"
     },
@@ -17,7 +17,7 @@
                 "Name": "Backend and Web Development and Design",
                 "Children": [
                     {
-                        "Name": "Serice Orientation",
+                        "Name": "Service Orientation",
                         "Url": "http://en.wikipedia.org/wiki/Service-oriented_architecture"
                     },
                     {
@@ -46,7 +46,7 @@
                     },
                     {
                         "Name": "Compensating Transaction",
-                        "Url": "https://msdn.microsoft.com/en-us/library/dn568103.aspx"
+                        "Url": "https://msdn.microsoft.com/en-us/library/dn589804.aspx"
                     },
                     {
                         "Name": "CQRS",
@@ -58,7 +58,7 @@
                     },
                     {
                         "Name": "Federated Identity",
-                        "Url": "https://msdn.microsoft.com/en-us/library/dn589803.aspx"
+                        "Url": "https://msdn.microsoft.com/en-us/library/dn589790.aspx"
                     },
                     {
                         "Name": "Gatekeeper",
@@ -71,9 +71,6 @@
                     {
                         "Name": "Sharding",
                         "Url": "https://msdn.microsoft.com/en-us/library/dn589797.aspx"
-                    },
-                    {
-                        "Name": "Abstract Factory"
                     },
                     {
                         "Name": "Adapter"
@@ -116,7 +113,7 @@
         ],
         "Technologies": [
             {
-                "Name": "C# 1.1 - 6.0",
+                "Name": "C# 1.1 - 7.0",
                 "Url": "http://msdn.microsoft.com/en-us/vstudio/hh341490.aspx",
                 "Children": [
                     {
@@ -138,6 +135,10 @@
                     {
                         "Name": "SignalR (Web Sockets) 1 - 3",
                         "Url": "http://signalr.net"
+                    },
+                    {
+                        "Name": ".NET Core 1.x",
+                        "Url": "https://docs.microsoft.com/en-us/dotnet/articles/core/"
                     },
                     {
                         "Name": "ORM (Entity Framework 2-5, NHibernate 2 - 3)"
@@ -168,13 +169,13 @@
                         "Url": "https://azure.microsoft.com/en-us/services/service-bus/"
                     },
                     {
-                        "Name": "Service Bus for Windows Server",
-                        "Url": "https://msdn.microsoft.com/en-us/library/dn282144.aspx"
-                    },
-                    {
                         "Name": "Service Fabric",
                         "Url": "https://azure.microsoft.com/en-us/services/service-fabric/"
                     },
+                    {
+                        "Name": "Service Bus for Windows Server",
+                        "Url": "https://msdn.microsoft.com/en-us/library/dn282144.aspx"
+                    }, 
                     {
                         "Name": "Heroku",
                         "Url": "https://www.heroku.com/"
@@ -185,7 +186,7 @@
                 "Name": "Databases",
                 "Children": [
                     {
-                        "Name": "SQL Server 7.0 - 2016 RC3",
+                        "Name": "SQL Server 7.0 - 2016",
                         "Url": "http://www.microsoft.com/sql"
                     },
                     {
@@ -235,19 +236,7 @@
                 "Name": "Misc",
                 "Children": [
                     {
-                        "Name": "Unity",
-                        "Url": "http://msdn.microsoft.com/en-us/library/ff632023.aspx"
-                    },
-                    {
-                        "Name": "Ninject",
-                        "Url": "http://www.ninject.org"
-                    },
-                    {
-                        "Name": "Castle Windsor",
-                        "Url": "http://docs.castleproject.org/"
-                    },
-                    {
-                        "Name": "Various hand-rolled IoC containers"
+                        "Name": "IoC (Unity, Ninject, Castle Windsor, hand-rolled, etc.)"
                     },
                     {
                         "Name": "TeamCity 6.0 - 7.0",
@@ -290,7 +279,10 @@
                         "Url": "http://www.idesign.net/Training/Project-Design-Master-Class"
                     },
                     {
-                        "Name": "Cloud/distributed architecture (as well as PaaS and SaaS)"
+                        "Name": "Distributed systems architecture (as well as PaaS and SaaS)"
+                    },
+                    {
+                        "Name": "Cloud, on-prem and hybrid hosting models"
                     },
                     {
                         "Name": "Technical and business analysis"
@@ -316,7 +308,11 @@
                     },
                     {
                         "Name": "IDesign Architecture Clinic (Michael 'Monty' Montgomery)",
-                        "Url": "http://www.idesign.net/Training/Project-Design-Master-Class"
+                        "Url": "http://www.idesign.net/Clinics/Architecture-Clinic"
+                    },
+                    {
+                        "Name": "IDesign Detailed Design Clinic (Michael 'Monty' Montgomery) March 2017",
+                        "Url": "http://www.idesign.net/Clinics/Detailed-Design-Clinic"
                     },
                     {
                         "Name": "Agile project management (Rally)",
@@ -328,8 +324,23 @@
     },
     "WorkExperience": [
         {
+            "CompanyName": "McKesson",
+            "StartDate": "2015-06-13T00:00:00",
+            "TerminalDate": "2016-08-28T00:00:00",
+            "Title": "Consultant",
+            "Address": "King of Prussia, PA",
+            "Description": "Continuing work providing foundation to cloud-enable existing enterprise products. Delivering dev ops tooling and a provider-based programming model to abstract the platform were essential in order to continue supporting existing on-prem customers. Along with the rest of our small team, provide individual product teams architectural and technical guidance, for PaaS and SaaS-enablment. Additional projects also involved customizing log4j 1.2 source for an adapter, as well as Docker.",
+            "LanguageConcentration": [
+                { "Name": "C#", "Weight": 0.3 },
+                { "Name": "PowerShell", "Weight": 0.3 },
+                { "Name": "Java", "Weight": 0.2 },
+                { "Name": "T-SQL", "Weight": 0.2 }
+            ]
+        },
+        {
             "CompanyName": "Almac Clinical Technologies",
             "StartDate": "2015-08-01T00:00:00",
+            "EndDate": "2016-06-10T00:00:00",
             "Title": "Solutions Architect",
             "Address": "Souderton, PA",
             "Description": "Primarily responsible for overseeing multiple development teams, delivering both designs and hands-on solutions for cross-cutting concerns, reducing the cost and time required to prepare and maintain studies for the company's flagship clinical trial management system. Partner with product owners by analyzing business problems, providing viable options and estimations, and facilitate aligning them with the study-level business unit. Collaborate with a small team of fellow architects to ensure consistent guidance and a clear vision for technical solutions. Provide technical leadership and mentoring to development team leads and their subordinates.",

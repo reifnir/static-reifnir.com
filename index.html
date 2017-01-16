@@ -18,7 +18,7 @@
                 </section>
                 <section id='skills'>
                     {{#Skills}}
-                        <h1 class="grid_12">Skills</h1>
+                        <h1 id="skillsTitle" class="grid_12">Skills</h1>
                         <div class="section clearfix">
                             <h3 class="grid_3">Professional</h3>
                             <div class="grid_9">
@@ -145,10 +145,22 @@
                         var html = template(data);
 
 
-                        $('#content')
-                            .hide()
+                        $('#content').html(html);
+                            /*.hide()
                             .html(html)
-                            .show('fast');
+                            .show('fast');*/
+                        $('#skillsTitle').hover(
+                            function () {
+                                var $this = $(this); // caching $(this)
+                                $this.data('initialText', $this.text());
+                                $this.text("Buzzwords");
+                            },
+                            function () {
+                                var $this = $(this); // caching $(this)
+                                $this.text($this.data('initialText'));
+                            }
+                        );
+                            
                     },
                     error: function (data, textStatus, jqXHR) {
                         $("#content").html('<h2>Error loading resume data</h2>' + data.statusText);
