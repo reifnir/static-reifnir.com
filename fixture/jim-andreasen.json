@@ -134,7 +134,7 @@
                 "Name": "Distributed Computing and Messaging",
                 "Children": [
                     {
-                        "Name": "Kubernetes (vinalla k8s, Azure AKS, AWS EKS, MiniKube, OpenShift, MiniShift)",
+                        "Name": "Kubernetes (vanilla k8s, Azure AKS, AWS EKS, MiniKube, OpenShift, MiniShift)",
                         "Url": "https://kubernetes.io"
                     },
                     {
