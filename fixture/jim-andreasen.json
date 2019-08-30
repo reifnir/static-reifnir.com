@@ -317,7 +317,7 @@
             "StartDate": "2016-06-13T00:00:00",
             "Title": "Architect",
             "Address": "King of Prussia, PA",
-            "Description": "Continuation of work started in the course of duties as an Apprenda consultant. Primary responsibility was as internal expert consultant for cloud-enabling existing enterprise products. Delivering dev ops tooling and a provider-based programming model to abstract the platform (essential to supporting existing on-prem customers). Provide individual product teams architectural and technical guidance for PaaS and SaaS-enablment. Additional work: customizing log4j 1.2-to-2.0 shim, Docker on Apprenda, Kubernetes-related technologies.",
+            "Description": "Continuation of work started in the course of duties as an Apprenda consultant. Primary responsibility was as internal expert consultant for cloud-enabling existing enterprise products. Delivering DevOps tooling and a provider-based programming model to abstract the platform (essential to supporting existing on-prem customers). Provide individual product teams architectural and technical guidance for PaaS and SaaS-enablment. Additional work: Apigee proxy development, Docker on Apprenda, Kubernetes-related technologies.",
             "LanguageConcentration": [
                 { "Name": "C#", "Weight": 0.3 },
                 { "Name": "PowerShell", "Weight": 0.2 },
