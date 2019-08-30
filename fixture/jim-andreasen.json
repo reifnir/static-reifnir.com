@@ -134,6 +134,10 @@
                         "Url": "https://dotnet.microsoft.com/download"
                     },
                     {
+                        "Name": ".NET Standard 2.0",
+                        "Url": "https://docs.microsoft.com/en-us/dotnet/standard/net-standard"
+                    },
+                    {
                         "Name": "LINQ",
                         "Url": "http://msdn.microsoft.com/en-us/library/bb397926.aspx"
                     }
