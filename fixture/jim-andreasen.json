@@ -4,7 +4,8 @@
         "LastName": "Andreasen",
         "Email": "jim.andreasen@reifnir.com",
         "Address": {
-            "Address": "1201 N 3rd St, Box 229",
+            "Address1": "1201 N 3rd St",
+            "Address2": "Box 229",
             "City": "Philadelphia",
             "State": "PA",
             "ZipCode": "19122"
@@ -123,6 +124,14 @@
                     {
                         "Name": "ASP.NET MVC 2 - 5",
                         "Url": "http://www.asp.net/mvc"
+                    },
+                    {
+                        "Name": "Azure Functions",
+                        "Url": "https://azure.microsoft.com/en-us/services/functions"
+                    },
+                    {
+                        "Name": ".NET Core 1.0 - 3.0 (preview)",
+                        "Url": "https://dotnet.microsoft.com/download"
                     },
                     {
                         "Name": "LINQ",
