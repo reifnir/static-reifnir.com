@@ -139,7 +139,7 @@
                 var template = handlebarsRegistrations();
 
                 $.ajax({
-                    url: 'fixture/jim-andreasen.js',
+                    url: 'fixture/jim-andreasen.json',
                     dataType: 'json',
                     success: function (data, textStatus, jqXHR) {
                         var html = template(data);
