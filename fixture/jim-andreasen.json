@@ -312,11 +312,11 @@
             "LanguageConcentration": [
                 { "Name": "C#", "Weight": 0.3 },
                 { "Name": "PowerShell", "Weight": 0.2 },
-                { "Name": "JavaScript", "Weight": 0.1 },
+                { "Name": "T-SQL", "Weight": 0.2 },
                 { "Name": "Bash", "Weight": 0.1 },
-                { "Name": "Python", "Weight": 0.1 },
-                { "Name": "T-SQL", "Weight": 0.1 },
-                { "Name": "Java", "Weight": 0.1 }
+                { "Name": "JavaScript", "Weight": 0.1 },
+                { "Name": "Python", "Weight": 0.05 },
+                { "Name": "Java", "Weight": 0.05 }
             ]
         },
         {
