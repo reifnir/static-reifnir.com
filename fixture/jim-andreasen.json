@@ -134,12 +134,16 @@
                 "Name": "Distributed Computing and Messaging",
                 "Children": [
                     {
-                        "Name": "Apprenda",
-                        "Url": "https://apprenda.com/"
-                    },
-                    {
                         "Name": "Kubernetes (vinalla k8s, Azure AKS, AWS EKS, MiniKube, OpenShift, MiniShift)",
                         "Url": "https://kubernetes.io"
+                    },
+                    {
+                        "Name": "Service Fabric",
+                        "Url": "https://azure.microsoft.com/en-us/services/service-fabric/"
+                    },
+                    {
+                        "Name": "Apprenda",
+                        "Url": "https://apprenda.com/"
                     },
                     {
                         "Name": "NServiceBus 4-5",
@@ -157,14 +161,6 @@
                         "Name": "Azure Service Bus",
                         "Url": "https://azure.microsoft.com/en-us/services/service-bus/"
                     },
-                    {
-                        "Name": "Service Fabric",
-                        "Url": "https://azure.microsoft.com/en-us/services/service-fabric/"
-                    },
-                    {
-                        "Name": "Service Bus for Windows Server",
-                        "Url": "https://msdn.microsoft.com/en-us/library/dn282144.aspx"
-                    }, 
                     {
                         "Name": "Heroku",
                         "Url": "https://www.heroku.com/"
