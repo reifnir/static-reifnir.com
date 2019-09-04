@@ -1,0 +1,34 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}
+  labels:
+    app: {{ .Values.service.name }} #same as .Values.appName
+    chart: {{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  replicas: {{ .Values.replicaCount}}
+  selector:
+    matchLabels:
+      app: {{ .Values.service.name }} #same as .Values.appName
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.service.name }} #same as .Values.appName
+        release: {{ .Release.Name }}
+    spec:
+      containers:
+        - name: {{ .Values.service.name }} #same as .Values.container.name
+          image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - containerPort: {{ .Values.service.internalPort }}
+          livenessProbe:
+            httpGet:
+              path: /
+              port: {{ .Values.service.internalPort }}
+          readinessProbe:
+            httpGet:
+              path: /
+              port: {{ .Values.service.internalPort }}

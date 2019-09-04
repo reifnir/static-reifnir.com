@@ -1,0 +1,4 @@
+apiVersion: v1
+description: A Helm chart for my resume site
+name: resume-site
+version: 0.1.0
