@@ -10,4 +10,3 @@ build:
   - docker login registry.gitlab.com -u gitlab-ci-token -p $CI_BUILD_TOKEN
   - docker build -t registry.gitlab.com/jim.andreasen/resume-site .
   - docker push registry.gitlab.com/jim.andreasen/resume-site
-
